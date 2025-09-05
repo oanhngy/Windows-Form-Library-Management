@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PTPMUD_QuanLyThuVienDataSet" targetNamespace="http://tempuri.org/PTPMUD_QuanLyThuVienDataSet.xsd" xmlns:mstns="http://tempuri.org/PTPMUD_QuanLyThuVienDataSet.xsd" xmlns="http://tempuri.org/PTPMUD_QuanLyThuVienDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PTPMUD_QuanLyThuVienConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PTPMUD_QuanLyThuVienConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyThuVien.Properties.Settings.GlobalReference.Default.PTPMUD_QuanLyThuVienConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ReportDoanhThuTableAdapter" GeneratorDataComponentClassName="ReportDoanhThuTableAdapter" Name="ReportDoanhThu" UserDataComponentName="ReportDoanhThuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PTPMUD_QuanLyThuVienConnectionString (Settings)" DbObjectName="PTPMUD_QuanLyThuVien.dbo.ReportDoanhThu" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Thang, MaPhieuMuon, DoanhThuPhieu FROM dbo.ReportDoanhThu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Thang" DataSetColumn="Thang" />
+              <Mapping SourceColumn="MaPhieuMuon" DataSetColumn="MaPhieuMuon" />
+              <Mapping SourceColumn="DoanhThuPhieu" DataSetColumn="DoanhThuPhieu" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ReportLuotMuonTableAdapter" GeneratorDataComponentClassName="ReportLuotMuonTableAdapter" Name="ReportLuotMuon" UserDataComponentName="ReportLuotMuonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PTPMUD_QuanLyThuVienConnectionString (Settings)" DbObjectName="PTPMUD_QuanLyThuVien.dbo.ReportLuotMuon" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Thang, MaPhieuMuon, SoChiTietMuon FROM dbo.ReportLuotMuon</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Thang" DataSetColumn="Thang" />
+              <Mapping SourceColumn="MaPhieuMuon" DataSetColumn="MaPhieuMuon" />
+              <Mapping SourceColumn="SoChiTietMuon" DataSetColumn="SoChiTietMuon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ReportSoLuongSachTableAdapter" GeneratorDataComponentClassName="ReportSoLuongSachTableAdapter" Name="ReportSoLuongSach" UserDataComponentName="ReportSoLuongSachTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PTPMUD_QuanLyThuVienConnectionString (Settings)" DbObjectName="PTPMUD_QuanLyThuVien.dbo.ReportSoLuongSach" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Thang, MaSach, TenSach, SoLanMuon FROM dbo.ReportSoLuongSach</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Thang" DataSetColumn="Thang" />
+              <Mapping SourceColumn="MaSach" DataSetColumn="MaSach" />
+              <Mapping SourceColumn="TenSach" DataSetColumn="TenSach" />
+              <Mapping SourceColumn="SoLanMuon" DataSetColumn="SoLanMuon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PTPMUD_QuanLyThuVienDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PTPMUD_QuanLyThuVienDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PTPMUD_QuanLyThuVienDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportDoanhThu" msprop:Generator_RowClassName="ReportDoanhThuRow" msprop:Generator_RowEvHandlerName="ReportDoanhThuRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportDoanhThuRowDeleted" msprop:Generator_RowDeletingName="ReportDoanhThuRowDeleting" msprop:Generator_RowEvArgName="ReportDoanhThuRowChangeEvent" msprop:Generator_TablePropName="ReportDoanhThu" msprop:Generator_RowChangedName="ReportDoanhThuRowChanged" msprop:Generator_UserTableName="ReportDoanhThu" msprop:Generator_RowChangingName="ReportDoanhThuRowChanging" msprop:Generator_TableClassName="ReportDoanhThuDataTable" msprop:Generator_TableVarName="tableReportDoanhThu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Thang" msprop:Generator_UserColumnName="Thang" msprop:Generator_ColumnPropNameInTable="ThangColumn" msprop:Generator_ColumnPropNameInRow="Thang" msprop:Generator_ColumnVarNameInTable="columnThang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaPhieuMuon" msprop:Generator_UserColumnName="MaPhieuMuon" msprop:Generator_ColumnPropNameInTable="MaPhieuMuonColumn" msprop:Generator_ColumnPropNameInRow="MaPhieuMuon" msprop:Generator_ColumnVarNameInTable="columnMaPhieuMuon" type="xs:int" minOccurs="0" />
+              <xs:element name="DoanhThuPhieu" msprop:Generator_UserColumnName="DoanhThuPhieu" msprop:Generator_ColumnPropNameInTable="DoanhThuPhieuColumn" msprop:Generator_ColumnPropNameInRow="DoanhThuPhieu" msprop:Generator_ColumnVarNameInTable="columnDoanhThuPhieu" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportLuotMuon" msprop:Generator_RowClassName="ReportLuotMuonRow" msprop:Generator_RowEvHandlerName="ReportLuotMuonRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportLuotMuonRowDeleted" msprop:Generator_RowDeletingName="ReportLuotMuonRowDeleting" msprop:Generator_RowEvArgName="ReportLuotMuonRowChangeEvent" msprop:Generator_TablePropName="ReportLuotMuon" msprop:Generator_RowChangedName="ReportLuotMuonRowChanged" msprop:Generator_UserTableName="ReportLuotMuon" msprop:Generator_RowChangingName="ReportLuotMuonRowChanging" msprop:Generator_TableClassName="ReportLuotMuonDataTable" msprop:Generator_TableVarName="tableReportLuotMuon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Thang" msprop:Generator_UserColumnName="Thang" msprop:Generator_ColumnPropNameInTable="ThangColumn" msprop:Generator_ColumnPropNameInRow="Thang" msprop:Generator_ColumnVarNameInTable="columnThang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaPhieuMuon" msprop:Generator_UserColumnName="MaPhieuMuon" msprop:Generator_ColumnPropNameInTable="MaPhieuMuonColumn" msprop:Generator_ColumnPropNameInRow="MaPhieuMuon" msprop:Generator_ColumnVarNameInTable="columnMaPhieuMuon" type="xs:int" minOccurs="0" />
+              <xs:element name="SoChiTietMuon" msprop:Generator_UserColumnName="SoChiTietMuon" msprop:Generator_ColumnPropNameInTable="SoChiTietMuonColumn" msprop:Generator_ColumnPropNameInRow="SoChiTietMuon" msprop:Generator_ColumnVarNameInTable="columnSoChiTietMuon" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportSoLuongSach" msprop:Generator_RowEvHandlerName="ReportSoLuongSachRowChangeEventHandler" msprop:Generator_RowDeletedName="ReportSoLuongSachRowDeleted" msprop:Generator_RowDeletingName="ReportSoLuongSachRowDeleting" msprop:Generator_RowEvArgName="ReportSoLuongSachRowChangeEvent" msprop:Generator_TablePropName="ReportSoLuongSach" msprop:Generator_RowChangedName="ReportSoLuongSachRowChanged" msprop:Generator_RowChangingName="ReportSoLuongSachRowChanging" msprop:Generator_TableClassName="ReportSoLuongSachDataTable" msprop:Generator_RowClassName="ReportSoLuongSachRow" msprop:Generator_TableVarName="tableReportSoLuongSach" msprop:Generator_UserTableName="ReportSoLuongSach">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Thang" msprop:Generator_ColumnPropNameInRow="Thang" msprop:Generator_ColumnPropNameInTable="ThangColumn" msprop:Generator_ColumnVarNameInTable="columnThang" msprop:Generator_UserColumnName="Thang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaSach" msprop:Generator_ColumnPropNameInRow="MaSach" msprop:Generator_ColumnPropNameInTable="MaSachColumn" msprop:Generator_ColumnVarNameInTable="columnMaSach" msprop:Generator_UserColumnName="MaSach" type="xs:int" minOccurs="0" />
+              <xs:element name="TenSach" msprop:Generator_ColumnPropNameInRow="TenSach" msprop:Generator_ColumnPropNameInTable="TenSachColumn" msprop:Generator_ColumnVarNameInTable="columnTenSach" msprop:Generator_UserColumnName="TenSach" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoLanMuon" msprop:Generator_ColumnPropNameInRow="SoLanMuon" msprop:Generator_ColumnPropNameInTable="SoLanMuonColumn" msprop:Generator_ColumnVarNameInTable="columnSoLanMuon" msprop:Generator_UserColumnName="SoLanMuon" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:ReportDoanhThu" />
+      <xs:field xpath="mstns:MaPhieuMuon" />
+    </xs:unique>
+    <xs:unique name="ReportLuotMuon_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:ReportLuotMuon" />
+      <xs:field xpath="mstns:MaPhieuMuon" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
